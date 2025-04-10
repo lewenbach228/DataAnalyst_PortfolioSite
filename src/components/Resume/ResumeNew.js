@@ -84,7 +84,7 @@ function ResumeNew() {
           )}
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative", marginTop: "20px" }}>
+        <Row style={{ justifyContent: "center", position: "relative", marginTop: "15px" }}>
           <Button
             variant="primary"
             href={pdf}
