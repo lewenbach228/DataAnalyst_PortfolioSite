@@ -1,29 +1,11 @@
 [
   {
-    "imgPath": "powerbi_dashboard.png",
-    "title": "Data Science Professional Certificate",
-    "issuer": "Coursera",
-    "description": "A complete data science path using Python, with hands-on projects.",
-    "date": "March 2023",
-    "certLink": "https://www.coursera.org/certificate/xyz",
-    "type": "Certificate"
-  },
-  {
-    "imgPath": "powerbi_dashboard.png",
-    "title": "SQL for Data Analysis",
-    "issuer": "Datacamp",
-    "description": "Structured Query Language mastery for business and data analytics.",
-    "date": "June 2022",
-    "certLink": "https://www.datacamp.com/badge/sql-data-analysis",
-    "type": "Badge"
-  },
-  {
-    "imgPath": "powerbi_dashboard.png",
-    "title": "Power BI Advanced",
+    "imgPath": "az900.jpeg",
+    "title": "Microsoft Azure Fundamentals (AZ-900)",
     "issuer": "Microsoft",
-    "description": "Build powerful dashboards and KPIs using advanced Power BI techniques.",
-    "date": "October 2021",
-    "certLink": "https://learn.microsoft.com/cert/power-bi-adv",
+    "description": "Official certification validating foundational knowledge of cloud services and how those services are provided with Microsoft Azure.",
+    "date": "February 2025",
+    "certLink": "https://learn.microsoft.com/api/credentials/share/en-us/Emperor228-3981/F9FA34D54FBA3297?sharingId=2003EFCA54CD5EF9",
     "type": "Certificate"
   }
 ]

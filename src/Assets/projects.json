@@ -1,30 +1,9 @@
 [
   {
-    "imgPath": "powerbi_dashboard.png",
-    "title": "Power BI Sales Dashboard",
-    "description": "Visualisation des ventes mensuelles avec KPIs, drillthrough et filtres dynamiques.",
-    "ghLink": "https://github.com/ablamvi/powerbi-sales-dashboard",
-    "tags": ["Power BI", "Dashboards & KPIs", "Data Analysis"]
-  },
-  {
-    "imgPath": "sql_queries.png",
-    "title": "Advanced SQL Query Pack",
-    "description": "Pack de requêtes SQL optimisées pour reporting, segmentation client et analyses financières.",
-    "ghLink": "https://github.com/ablamvi/sql-query-pack",
-    "tags": ["SQL", "Data Analysis"]
-  },
-  {
-    "imgPath": "storytelling_report.png",
-    "title": "Data Storytelling Report",
-    "description": "Rapport narratif interactif combinant visualisation, narration et insight business.",
-    "ghLink": "https://github.com/ablamvi/storytelling-report",
-    "tags": ["Storytelling", "Dashboards & KPIs"]
-  },
-  {
-    "imgPath": "kpi_tracking.png",
-    "title": "KPI Tracker",
-    "description": "Tableau de bord centralisant les indicateurs de performance stratégiques pour les décideurs.",
-    "ghLink": "https://github.com/ablamvi/kpi-tracker",
-    "tags": ["Dashboards & KPIs", "Power BI", "SQL"]
+    "imgPath": "retail_dashboard.png",
+    "title": "Retail Superstore Analysis",
+    "description": "Comprehensive retail sales data analysis to identify growth opportunities, optimize logistics operations and segment customers.",
+    "ghLink": "https://github.com/Emperor228/Superstore-Retail-Analysis-Project",
+    "tags": ["Power BI", "SQL"]
   }
 ]

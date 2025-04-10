@@ -7,11 +7,12 @@ import "./Projects.css"; // <-- Pour les styles personnalisés
 
 const FILTERS = [
   "All",
-  "Data Analysis",
   "Power BI",
+  "Tableau",
+  "Excel",
+  "Python",
   "SQL",
   "Storytelling",
-  "Dashboards & KPIs",
 ];
 
 function Projects() {
@@ -48,7 +49,10 @@ function Projects() {
                 // console.log("Clicked:", tag);
                 handleFilterChange(tag);
               }}
-              style={{ margin: "5px" }}
+              style={{
+                color: "white",
+                margin: "5px",
+              }}
             >
               {tag}
             </Button>
@@ -60,7 +64,7 @@ function Projects() {
           {filteredProjects.map((project, index) => (
             <Col md={4} className="mb-4" key={index}>
               <ProjectCards
-                // imgPath={require(`../../Assets/Projects/${project.imgPath}`)}
+                imgPath={require(`../../Assets/Projects/${project.imgPath}`)}
                 title={project.title}
                 description={project.description}
                 ghLink={project.ghLink}

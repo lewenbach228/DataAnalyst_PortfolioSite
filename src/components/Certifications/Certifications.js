@@ -37,10 +37,10 @@ function Certifications() {
               key={tag}
               variant={filter === tag ? "primary" : "outline-primary"}
               onClick={() => {
-                console.log("Clicked:", tag);
+                // console.log("Clicked:", tag);
                 handleFilterChange(tag);
               }}
-              style={{ margin: "5px" }}
+              style={{ margin: "5px", color: "white" }}
             >
               {tag}
             </Button>
@@ -56,7 +56,7 @@ function Certifications() {
                 description={cert.description}
                 date={cert.date}
                 certLink={cert.certLink}
-                imgPath={cert.imgPath} // Dynamically load the image
+                imgPath={require(`../../Assets/Certificates/${cert.imgPath}`)}
               />
             </Col>
           ))}
