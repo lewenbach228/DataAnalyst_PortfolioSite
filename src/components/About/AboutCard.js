@@ -8,33 +8,35 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br /> I am a final year student pursuing an Integrated MSc (IMSc)
-            in Maths and Computing at BIT Mesra.
-            <br />
-            Additionally, I am currently employed as a software developer at
-            Juspay.
+            Hi everyone, I’m <span className="purple">Ablamvi AGBONAGBAN</span>,  
+            a passionate <span className="purple">Data Analyst</span> who loves turning raw data into powerful insights.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I specialize in digging deep into datasets to uncover patterns, trends, and opportunities. 
+            My toolbox includes Python, SQL, Power BI, and a knack for storytelling through data.
+            <br />
+            <br />
+            I believe in data-driven decision making, but I also know when to trust my intuition. 😉
+            <br />
+            <br />
+            When I’m not slicing through spreadsheets or visualizing dashboards, you can find me:
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Exploring new tech and AI tools
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Reading about psychology and personal growth
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Dreaming up business ideas and building them one step at a time
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Data tells stories. I help make sure people listen."
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Ablamvi AGBONAGBAN</footer>
         </blockquote>
       </Card.Body>
     </Card>

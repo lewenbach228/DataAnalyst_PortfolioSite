@@ -1,115 +1,88 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import myImg from "../../Assets/avatar.svg";
+import Type from "./Type";
+import Particle from "../Particle";
+import "./Home.css";
+import { SOCIAL_LINKS } from "../../constants";
+import { Link } from "react-router-dom";
 
-function Home2() {
+const Home = () => {
   return (
-    <Container fluid className="home-about-section" id="about">
-      <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
-            </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-            </p>
-          </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+    
+      <Container fluid className="home-section">
+        <Container className="home-content">
+          <Row className="align-items-center">
+            <Col md={7} className="home-header">
+              <h1 className="heading">
+                Hi, I'm <span className="highlight">Ablamvi AGBONAGBAN</span>
+              </h1>
+              <h2 className="subheading">
+                Data Analyst | Business Intelligence Expert
+              </h2>
+
+              <div className="typewriter-wrapper">
+                <p className="typewriter-label">
+                  Specialized in <Type />
+                </p>
+              </div>
+
+              <div className="cta-buttons">
+                <Button
+                  as={Link}
+                  to="/project"
+                  variant="success"
+                  className="cta-btn"
                 >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
+                  View My Work
+                </Button>
+              </div>
+            </Col>
+
+            <Col md={5} className="home-image">
+              <Tilt
+                tiltEnable={false}
+                glareEnable={true}
+                glareMaxOpacity={0.1}
+                glareColor="#ffffff"
+                glarePosition="all"
+              >
+                <img
+                  src={myImg}
+                  alt="Data Analytics Visualization"
+                  className="img-fluid illustration"
+                />
+              </Tilt>
+              <div className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href={SOCIAL_LINKS.LINKEDIN}
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="social-button"
                 >
-                  <AiOutlineTwitter />
+                  <AiFillLinkedin className="social-icon" />
                 </a>
-              </li>
-              <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href={SOCIAL_LINKS.GITHUB}
                   target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                  className="social-button"
+                  style={{ marginLeft: "10px" }}
                 >
-                  <FaLinkedinIn />
+                  <AiFillGithub className="social-icon" />
                 </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+        {/* <Particle /> */}
       </Container>
-    </Container>
+    
   );
-}
-export default Home2;
+};
+
+export default Home;
